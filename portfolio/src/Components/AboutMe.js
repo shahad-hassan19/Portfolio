@@ -18,7 +18,7 @@ export default function AboutMe(){
                     </div>
                     <img src={LaptopPic} alt="Laptop" className="w-80 rounded-md self-center px-3 mt-6 lg:mt-0 lg:px-0" />
                 </div>
-                <div className="mt-6 grid sm:grid-cols-1 text-center md:grid-cols-2 lg:flex justify-between align-items-center ">
+                <div className="mt-6 grid sm:grid-cols-1 self-center md:grid-cols-2 lg:flex justify-between align-items-center ">
                     <div className="mt-4 px-3">
                         <p className="font-medium">Name:</p>
                         <p className="font-semibold text-lg">Shahad Hassan</p>
