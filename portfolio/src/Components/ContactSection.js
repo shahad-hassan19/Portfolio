@@ -22,7 +22,7 @@ export default function ContactSection(){
     };
     return(
         <div id='contact-me' className=" bg-yellow-300 text-black w-full py-14 md:py-24 ">
-            <div className=" mx-12 md:mx-6 lg:mx-8 xl:mx-24 grid grid-cols-1 lg:grid-cols-2 justify-around align-items-center  px-3">
+            <div className=" sm:mx-12 md:mx-6 lg:mx-8 xl:mx-24 grid grid-cols-1 lg:grid-cols-2 justify-around align-items-center  px-3">
                 <div className=" text-center lg:text-left px-3">
                     <h1 className=" font-bold text-3.5xl mb-12 ">Let's get in touch</h1>
                     <div>

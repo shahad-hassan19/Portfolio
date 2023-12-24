@@ -3,7 +3,7 @@ import ExpCard from '../Cards/ExpCard';
 export default function Resume(){
     return(
         <div id='resume' className=" bg-white w-full py-14 md:py-24">
-            <div className=" text-black mx-12 md:mx-6 lg:mx-8 xl:mx-24 px-3">
+            <div className=" text-black sm:mx-12 md:mx-6 lg:mx-8 xl:mx-24 px-3">
                 <div>
                     <h2 className="text-center text-black mb-2"><span className="bg-yellow-300 px-2 ">Resume</span></h2>
                     <h2 className="text-center font-semibold text-3.5xl mb-12 ">A summary Of My Resume</h2>

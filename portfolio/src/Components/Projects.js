@@ -12,12 +12,12 @@ export default function Projects(){
     let [activeButton, setActiveButton] = useState("All");
     return(
         <div id='projects' className=" bg-white w-full py-14 md:py-24">
-            <div className=" text-black mx-12 md:mx-6 lg:mx-8 xl:mx-24 px-3">
+            <div className=" text-black sm:mx-12 md:mx-6 lg:mx-8 xl:mx-24 px-3">
                 <div>
                     <h2 className="text-center text-black mb-2"><span className="bg-yellow-300 px-2 ">My Projects</span></h2>
                     <h2 className="text-center font-semibold text-3.5xl mb-12 ">Some of my recent projects</h2>
                     <div>
-                        <div className="flex justify-center align-items-center mb-12" >
+                        <div className="flex justify-center align-items-center mb-12 sm:overflow-scroll" >
                             <button  className={`text-black cursor-pointer pt-2 pb-1 px-5 font-semibold ${activeButton === 'All' ? 'border-b-2 border-yellow-300' : ''}`} onClick={()=>{
                                 setProj("All");
                                 setActiveButton("All")}} >All</button>

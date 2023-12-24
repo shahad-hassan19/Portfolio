@@ -1,5 +1,5 @@
 import './App.css';
-import Navbar from './Components/Navbar';
+import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero';
 import AboutMe from './Components/AboutMe';
 import MySkills from './Components/MySkills';

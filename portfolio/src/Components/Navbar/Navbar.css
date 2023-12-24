@@ -1,0 +1,12 @@
+.active{
+    border-bottom: solid 2px black;
+}
+
+.ham{
+    letter-spacing: 0.04em;
+}
+
+.ham .active{
+    color: #F5DF4E;
+    border: none;
+}
