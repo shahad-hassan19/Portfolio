@@ -5,6 +5,8 @@ import MG from './Assets/M&G.png'
 import Scoiateal from './Assets/Scoiateal.png'
 import Redfly from './Assets/Redfly.png'
 import Amazon from './Assets/Amazon.png'
+import MouseTracker from './Assets/MouseTracker.png'
+import PassGenerator from './Assets/PassGenerator.png'
 
 import { useState, React } from 'react';
 export default function Projects(){
@@ -17,7 +19,7 @@ export default function Projects(){
                     <h2 className="text-center text-black mb-2"><span className="bg-yellow-300 px-2 ">My Projects</span></h2>
                     <h2 className="text-center font-semibold text-3.5xl mb-12 ">Some of my recent projects</h2>
                     <div>
-                        <div className="flex justify-center align-items-center mb-12 sm:overflow-scroll" >
+                        <div className="flex justify-center align-items-center mb-12" >
                             <button  className={`text-black cursor-pointer pt-2 pb-1 px-5 font-semibold ${activeButton === 'All' ? 'border-b-2 border-yellow-300' : ''}`} onClick={()=>{
                                 setProj("All");
                                 setActiveButton("All")}} >All</button>
@@ -34,28 +36,32 @@ export default function Projects(){
                         <div>
                             {
                                 proj == "All" && <div className='flex flex-wrap justify-center align-items-center ' >
-                                    <ProjectCard src={PortfolioImg} href="/home" name="Portfolio" />
-                                    <ProjectCard src={MG} href="https://shahad-hassan19.github.io/Mangata-Gallo/" name="Mangata & Gallo" />
-                                    <ProjectCard src={Scoiateal} href="https://shahad-hassan19.github.io/TheScoia-tael/" name="Scoiateal" />
-                                    <ProjectCard src={Redfly} href="https://shahad-hassan19.github.io/REDFLY-Designs/" name="Redfly Designs" />
-                                    <ProjectCard src={Amazon} href="https://shahad-hassan19.github.io/Amazon-Clone/" name="Amazon Clone" />
+                                    <ProjectCard src={PortfolioImg} href="https://portfolio-shahad-hassan.vercel.app/" name="Portfolio" />
+                                    <ProjectCard src={MG} href="https://mangata-gallo-home.vercel.app/" name="Mangata & Gallo" />
+                                    <ProjectCard src={Scoiateal} href="https://the-scoia-tael.vercel.app/" name="Scoiateal" />
+                                    <ProjectCard src={Redfly} href="https://redfly-designs.vercel.app/" name="Redfly Designs" />
+                                    <ProjectCard src={Amazon} href="https://amazon-clone-ten-steel.vercel.app/" name="Amazon Clone" />
+                                    <ProjectCard src={MouseTracker} href="https://mouse-position-tracker.vercel.app/" name="Mouse Position Tracker" />
+                                    <ProjectCard src={PassGenerator} href="https://password-generator-gilt-six.vercel.app/" name="Password Generator" />
                                 </div>
                             }
                             {
                                 proj == "ReactJS" && <div className='flex flex-wrap justify-center align-items-center' >
-                                    <ProjectCard src={PortfolioImg} href="/home" name="Portfolio" />
+                                    <ProjectCard src={PortfolioImg} href="https://portfolio-shahad-hassan.vercel.app/" name="Portfolio" />
+                                    <ProjectCard src={MouseTracker} href="https://mouse-position-tracker.vercel.app/" name="Mouse Position Tracker" />
+                                    <ProjectCard src={PassGenerator} href="https://password-generator-gilt-six.vercel.app/" name="Password Generator" />
                                 </div>
                             }
                             {
                                 proj == "HTML" && <div className='flex flex-wrap justify-center align-items-center' >
-                                <ProjectCard src={MG} href="https://shahad-hassan19.github.io/Mangata-Gallo/" name="Mangata & Gallo" />
-                                <ProjectCard src={Scoiateal} href="https://shahad-hassan19.github.io/TheScoia-tael/" name="Scoia'teal" />
-                                <ProjectCard src={Amazon} href="https://shahad-hassan19.github.io/Amazon-Clone/" name="Amazon Clone" />
+                                <ProjectCard src={MG} href="https://mangata-gallo-home.vercel.app/" name="Mangata & Gallo" />
+                                <ProjectCard src={Scoiateal} href="https://the-scoia-tael.vercel.app/" name="Scoia'teal" />
+                                <ProjectCard src={Amazon} href="https://amazon-clone-ten-steel.vercel.app/" name="Amazon Clone" />
                                 </div>
                             }
                             {
                                 proj == "Frontend" && <div className='flex flex-wrap justify-center align-items-center' >
-                                <ProjectCard src={Redfly} href="https://shahad-hassan19.github.io/REDFLY-Designs/" name="Redfly Designs" />
+                                <ProjectCard src={Redfly} href="hhttps://redfly-designs.vercel.app/" name="Redfly Designs" />
                                 </div>
                             }
 
