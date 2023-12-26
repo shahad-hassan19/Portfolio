@@ -27,7 +27,7 @@ export default function ContactSection(){
                     <h1 className=" font-bold text-3.5xl mb-12 ">Let's get in touch</h1>
                     <div>
                         <p className=" text-justify text-xl mb-12">
-                            I enjoy discussing new projects and design challenges. Please share as much info, as possible so we can get the most out of our first catch-up.
+                        "I'm thrilled to be on this journey of innovation and discovery, and I'm excited to connect, collaborate, and create something amazing together. Let's build the future, one line of code at a time!"
                         </p>
                         <div>
                             <h3 className="text-xl mb-2 font-semibold">

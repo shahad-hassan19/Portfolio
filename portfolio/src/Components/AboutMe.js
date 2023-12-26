@@ -13,10 +13,10 @@ export default function AboutMe(){
                             Hi, I'm <span className="font-bold border-b-2 border-yellow-300">Shahad Hassan</span>
                         </h2>
                         <p className="mb-4 text-xl text-justify font-normal">
-                        I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me. Delivering work within time and budget which meets client’s requirements is our moto.
+                        I'm a frontend developer passionate about React. I love building websites that captivate users. I'm always exploring new ways to bring ideas to life through code. Being a firm believer in the power of teamwork, I cherish the opportunity to collaborate and contribute as a team player, where our collective creativity sparks exceptional results. I embrace challenges as opportunities for growth, dedicating myself to hard work and continuous learning in this ever-evolving tech landscape.
                         </p>
                     </div>
-                    <img src={LaptopPic} alt="Laptop" className="w-80 rounded-md self-center px-3 mt-6 lg:mt-0 lg:px-0" />
+                    <img src={LaptopPic} alt="Laptop" className="w-80 rounded-md self-center ml-6 mt-6 lg:mt-0 lg:px-0" />
                 </div>
                 <div className="mt-6 grid sm:grid-cols-1 sm:justify-items-center md md:grid-cols-2 lg:flex lg:justify-between align-items-center ">
                     <div className="mt-4 px-3">

@@ -13,6 +13,27 @@ import './Navbar.css';
 
 export default function Navbar(){
     const [toggleIcon, setToggleIcon] = useState(false);
+    // const [showBackToTop, setShowBackToTop] = useState(false);
+
+    // useEffect(() => {
+    //     window.addEventListener("scroll", handleScroll);
+    //     checkIfHomePage();
+    //     return () => {
+    //         window.removeEventListener("scroll", handleScroll);
+    //     };
+    // },);
+
+    // const checkIfHomePage = () => {
+    //     const isTopOfPage = window.scrollY === 0;
+    //     setIsHomePage(isTopOfPage);
+
+    // }
+
+    // const handleScroll = () => {
+    //     const currentScrollY = window.scrollY;
+    //     setShowBackToTop(currentScrollY > -100);
+
+    // }
 
     const handleClickIcon = () => {
         setToggleIcon(!toggleIcon)
@@ -62,7 +83,7 @@ export default function Navbar(){
                         </div>
                     </div>
                     <div>
-                        <Link to="home" spy={true} smooth={true} offset={-100} duration={500} className="fixed z-50 bottom-3 right-3 p-3 bg-black opacity-30 text-white font-normal rounded-full w-max cursor-pointer"> <FaArrowUp /></Link>
+                        <Link to="home" spy={true} smooth={true} offset={-100} duration={500} className="fixed z-50 bottom-3 right-3 p-3 bg-black opacity-30 text-white font-normal rounded-full w-max cursor-pointer" > <FaArrowUp /></Link>
                     </div>
         </div>
     )

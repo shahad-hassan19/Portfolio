@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 import { FaRegArrowAltCircleDown } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa";
 export default function Hero(){
+    console.log('Current Pathname:', window.location.pathname);
 
     return(
         <div id='home' className="bg-yellow-300 w-full text-black lg:mt-16 ">
