@@ -43,13 +43,13 @@ export default function Navbar(){
                         </div>
                         <div >
                             <nav className=" ham m-3 grid  align-content-around justify-center font-medium text-2xl ">
-                                <Link activeClass='active' exact to="/home" spy={true} smooth={true} offset={-100} duration={500} className="py-2 hover:text-yellow-300 cursor-pointer" onClick={handleClickIcon}s>Home</Link>
-                                <Link activeClass='active' to="/about-me" spy={true} smooth={true} offset={-20} duration={500} className="py-2 hover:text-yellow-300 cursor-pointer" onClick={handleClickIcon}>About Me</Link>
-                                <Link activeClass='active' to="/skills" spy={true} smooth={true} offset={-20} duration={500} className="py-2 hover:text-yellow-300 cursor-pointer" onClick={handleClickIcon}>Skills</Link>
-                                <Link activeClass='active' to="/resume" spy={true} smooth={true} offset={-20} duration={500} className="py-2 hover:text-yellow-300 cursor-pointer" onClick={handleClickIcon}>Resume</Link>
-                                <Link activeClass='active' to="/projects" spy={true} smooth={true} offset={-20} duration={500} className="py-2 hover:text-yellow-300 cursor-pointer" onClick={handleClickIcon}>Projects</Link>
-                                <Link active Class='active' to="/testimonials" spy={true} smooth={true} offset={-20} duration={500} className="py-2 hover:text-yellow-300 cursor-pointer" onClick={handleClickIcon}>Testimonials</Link>
-                                <Link activeClass='active' to="/contact-me" spy={true} smooth={true} offset={-20} duration={500} className="py-2 hover:text-yellow-300 cursor-pointer" onClick={handleClickIcon}>Contact Me</Link>
+                                <Link activeClass='active' to="home" spy={true} smooth={true} offset={-100} duration={500} className="py-2 hover:text-yellow-300 cursor-pointer" onClick={handleClickIcon}s>Home</Link>
+                                <Link activeClass='active' to="about-me" spy={true} smooth={true} offset={-20} duration={500} className="py-2 hover:text-yellow-300 cursor-pointer" onClick={handleClickIcon}>About Me</Link>
+                                <Link activeClass='active' to="skills" spy={true} smooth={true} offset={-20} duration={500} className="py-2 hover:text-yellow-300 cursor-pointer" onClick={handleClickIcon}>Skills</Link>
+                                <Link activeClass='active' to="resume" spy={true} smooth={true} offset={-20} duration={500} className="py-2 hover:text-yellow-300 cursor-pointer" onClick={handleClickIcon}>Resume</Link>
+                                <Link activeClass='active' to="projects" spy={true} smooth={true} offset={-20} duration={500} className="py-2 hover:text-yellow-300 cursor-pointer" onClick={handleClickIcon}>Projects</Link>
+                                <Link active Class='active' to="testimonials" spy={true} smooth={true} offset={-20} duration={500} className="py-2 hover:text-yellow-300 cursor-pointer" onClick={handleClickIcon}>Testimonials</Link>
+                                <Link activeClass='active' to="contact-me" spy={true} smooth={true} offset={-20} duration={500} className="py-2 hover:text-yellow-300 cursor-pointer" onClick={handleClickIcon}>Contact Me</Link>
                             </nav>
                         </div>
                         <div className="flex justify-center self-center align-items-center mb-8 font-bold">
