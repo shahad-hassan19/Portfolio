@@ -35,7 +35,7 @@ export default function Projects(){
                         </div>
                         <div>
                             {
-                                proj == "All" && <div className='flex flex-wrap justify-center align-items-center ' >
+                                proj == "All" && <div className='grid gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center ' >
                                     <ProjectCard src={PortfolioImg} href="https://portfolio-shahad-hassan.vercel.app/" name="Portfolio" />
                                     <ProjectCard src={MG} href="https://mangata-gallo-home.vercel.app/" name="Mangata & Gallo" />
                                     <ProjectCard src={Scoiateal} href="https://the-scoia-tael.vercel.app/" name="Scoiateal" />
@@ -46,21 +46,21 @@ export default function Projects(){
                                 </div>
                             }
                             {
-                                proj == "ReactJS" && <div className='flex flex-wrap justify-center align-items-center' >
+                                proj == "ReactJS" && <div className='grid gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center' >
                                     <ProjectCard src={PortfolioImg} href="https://portfolio-shahad-hassan.vercel.app/" name="Portfolio" />
                                     <ProjectCard src={MouseTracker} href="https://mouse-position-tracker.vercel.app/" name="Mouse Position Tracker" />
                                     <ProjectCard src={PassGenerator} href="https://password-generator-gilt-six.vercel.app/" name="Password Generator" />
                                 </div>
                             }
                             {
-                                proj == "HTML" && <div className='flex flex-wrap justify-center align-items-center' >
+                                proj == "HTML" && <div className='grid gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center' >
                                 <ProjectCard src={MG} href="https://mangata-gallo-home.vercel.app/" name="Mangata & Gallo" />
                                 <ProjectCard src={Scoiateal} href="https://the-scoia-tael.vercel.app/" name="Scoia'teal" />
                                 <ProjectCard src={Amazon} href="https://amazon-clone-ten-steel.vercel.app/" name="Amazon Clone" />
                                 </div>
                             }
                             {
-                                proj == "Frontend" && <div className='flex flex-wrap justify-center align-items-center' >
+                                proj == "Frontend" && <div className='grid gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center' >
                                 <ProjectCard src={Redfly} href="hhttps://redfly-designs.vercel.app/" name="Redfly Designs" />
                                 </div>
                             }

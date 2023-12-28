@@ -13,16 +13,16 @@ import Footer from './Components/Footer';
 function App() {
   return (
     <div className="App font-poppins">
-      <Navbar />
-      <Hero />
-      <AboutMe />
-      <MySkills />
-      <Resume />
-      <Projects />
-      <HireMe />
-      <Testimonials />
-      <ContactSection />
-      <Footer />
+    <Navbar />
+    <Hero/>
+    <AboutMe/>
+    <MySkills/>
+    <Resume/>
+    <Projects/>
+    <HireMe/>
+    <Testimonials/>
+    <ContactSection/>
+    <Footer />
     </div>
   );
 }
