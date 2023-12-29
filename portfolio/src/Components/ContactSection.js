@@ -54,7 +54,7 @@ export default function ContactSection(){
                         </div>
                     </div>
                 </div>
-                <div className=" mt-12 lg:mt-0 lg:ml-20 lg:text-left px-3">
+                <div className=" mt-12 lg:mt-0 lg:ml-20 lg:text-left px-3 fadeInUp">
                     <h1 className= " font-bold text-center lg:text-left text-3.5xl mb-12 ">Contact Me</h1>
                     <form className=" flex justify-start align-items-center flex-col" ref={form} onSubmit={sendEmail}>
                         <div className="mt-6 px-3">

@@ -23,6 +23,18 @@ module.exports = {
         '7xl' : '76px',
         '8xl' : '92px',
         '9xl' : '104px',
+      },
+      keyframes: {
+        'fadeInUp': {
+          '0%': {
+            opacity: 0,
+            transform: 'translateY(50px)',
+          },
+          '100%': {
+            opacity: 1,
+            transform: 'translateY(0)',
+          }
+        }
       }
     },
   },

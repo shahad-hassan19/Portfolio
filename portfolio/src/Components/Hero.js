@@ -21,8 +21,8 @@ export default function Hero(){
                     <img src = {Pic} alt='My-Pic' className=" w-80 flex-shrink-1" />
                 </div>
             </div>
-            <div className='flex justify-center align-items-center mt-20 pb-10 lg:mt-14 '>
-                <Link activeClass='active' to="about-me" spy={true} smooth={true} offset={-20} duration={500} className="px-3 cursor-pointer"><FaArrowDown className='text-xl font-bold self-center'/></Link>
+            <div className='flex justify-center align-items-center mt-20 pb-10 lg:mt-14'>
+                <Link activeClass='active' to="about-me" spy={true} smooth={true} offset={-20} duration={500} className=" animate-bounce px-3 cursor-pointer"><FaArrowDown className='text-xl font-bold self-center'/></Link>
             </div>
         </div>
     )
