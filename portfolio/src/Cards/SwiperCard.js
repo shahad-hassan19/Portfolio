@@ -1,6 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Pic from '../Components/Assets/Ellipse 1.png';
+import Pic1 from '../Components/Assets/Mentor1.jpg';
+import Pic2 from '../Components/Assets/Mentor2.jpg';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -21,33 +22,23 @@ export default function SwiperCard() {
             className="mySwiper flex justify-center align-items-center">
                 <SwiperSlide className="flex text-center flex-col justify-items-center align-content-center ">
                     <p className="mb-4 w-2/3 self-center text-justify text-xl">
-                        "I have always believed, and I still believe, that whatever good or bad fortune may come our way, we can always give it meaning and transform it into something of value."
+                        "Working with Shahad was an absolute pleasure. His ability to quickly grasp new concepts and apply them creatively to projects is truly impressive. Not only does he possess strong technical skills, but his collaborative nature and effective communication make him a valuable asset to any team. I have no hesitation in recommending him as a skilled and adaptable frontend developer."
                     </p>
                     <div className="self-center">
-                        <img src = {Pic} alt='Mentor-Pic' className=" w-16" />
+                        <img src = {Pic1} alt='Mentor-Pic' className="w-24 rounded-full" />
                     </div>
-                    <h3 className=" font-bold">Shahad Hassan</h3>
-                    <p>Developer</p>
+                    <h3 className=" text-xl font-bold">Shakti Singh</h3>
+                    <p>Consulting Specialist - UX/UI</p>
                 </SwiperSlide>
                 <SwiperSlide className="flex text-center flex-col justify-items-center align-content-center ">
                     <p className="mb-4 w-2/3 self-center text-justify text-xl">
-                        "I have always believed, and I still believe, that whatever good or bad fortune may come our way, we can always give it meaning and transform it into something of value."
+                        "Shahad is not just proficient in coding, he also possesses a strong design sense, which greatly enhances the visual appeal and functionality of his projects. His collaborative approach and strong problem-solving skills make him an excellent addition to any project. His dedication and passion for his craft are admirable, and I am confident he will continue to thrive in his career."
                     </p>
                     <div className="self-center">
-                        <img src = {Pic} alt='Mentor-Pic' className=" w-16" />
+                        <img src = {Pic2} alt='Mentor-Pic' className="w-24 rounded-full" />
                     </div>
-                    <h3 className=" font-bold">Shahad Chauhan</h3>
-                    <p>Developer</p>
-                </SwiperSlide>
-                <SwiperSlide className="flex text-center flex-col justify-items-center align-content-center ">
-                    <p className="mb-4 w-2/3 self-center text-justify text-xl">
-                        "I have always believed, and I still believe, that whatever good or bad fortune may come our way, we can always give it meaning and transform it into something of value."
-                    </p>
-                    <div className="self-center">
-                        <img src = {Pic} alt='Mentor-Pic' className=" w-16" />
-                    </div>
-                    <h3 className=" font-bold">Shahad Gurjar</h3>
-                    <p>Developer</p>
+                    <h3 className="text-xl font-bold">Tanmay Sharma</h3>
+                    <p>Saas Sales Professional</p>
                 </SwiperSlide>
             </Swiper>
         </>
