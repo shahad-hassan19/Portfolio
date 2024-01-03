@@ -2,7 +2,6 @@
 import ProjectCard from '../Cards/ProjectCard'
 import PortfolioImg from './Assets/Portfolio-img.png'
 import MG from './Assets/M&G.png'
-import Scoiateal from './Assets/Scoiateal.png'
 import Redfly from './Assets/Redfly.png'
 import Amazon from './Assets/Amazon.png'
 import MouseTracker from './Assets/MouseTracker.png'
@@ -38,7 +37,6 @@ export default function Projects(){
                                 proj == "All" && <div className='grid gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center ' >
                                     <ProjectCard src={PortfolioImg} href="https://portfolio-shahad-hassan.vercel.app/" name="Portfolio" />
                                     <ProjectCard src={MG} href="https://mangata-gallo-home.vercel.app/" name="Mangata & Gallo" />
-                                    <ProjectCard src={Scoiateal} href="https://the-scoia-tael.vercel.app/" name="The Scoia'teal" />
                                     <ProjectCard src={Redfly} href="https://redfly-designs.vercel.app/" name="R£ƊFLƳ Designs" />
                                     <ProjectCard src={Amazon} href="https://amazon-clone-ten-steel.vercel.app/" name="Amazon Clone" />
                                     <ProjectCard src={MouseTracker} href="https://mouse-position-tracker.vercel.app/" name="Mouse Position Tracker" />
@@ -55,7 +53,6 @@ export default function Projects(){
                             {
                                 proj == "HTML" && <div className='grid gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center' >
                                 <ProjectCard src={MG} href="https://mangata-gallo-home.vercel.app/" name="Mangata & Gallo" />
-                                <ProjectCard src={Scoiateal} href="https://the-scoia-tael.vercel.app/" name="The Scoia'teal" />
                                 <ProjectCard src={Amazon} href="https://amazon-clone-ten-steel.vercel.app/" name="Amazon Clone" />
                                 </div>
                             }
