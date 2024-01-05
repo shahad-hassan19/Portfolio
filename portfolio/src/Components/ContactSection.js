@@ -1,11 +1,15 @@
 import emailjs from '@emailjs/browser';
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 export default function ContactSection(){
+
+    const [ userName, setUserName ] = useState('')
+    const [ userMail, setUserMail ] = useState('')
+    const [ message, setMessage ] = useState('')
 
     const form = useRef();
     const sendEmail = (e) => {
@@ -20,6 +24,14 @@ export default function ContactSection(){
             }
         );
     };
+
+    const isFormValid = () => {
+        return(
+            userName.trim() !== '' &&
+            userMail.trim() !== '' &&
+            message.trim() !== ''
+        )
+    }
     return(
         <div id='contact-me' className=" bg-yellow-300 text-black w-full py-14 md:py-24 ">
             <div className=" sm:mx-12 md:mx-6 lg:mx-8 xl:mx-24 grid grid-cols-1 lg:grid-cols-2 justify-around align-items-center  px-3">
@@ -59,17 +71,26 @@ export default function ContactSection(){
                     <form className=" flex justify-start align-items-center flex-col" ref={form} onSubmit={sendEmail}>
                         <div className="mt-6 px-3">
                             <label htmlFor="name" className="mb-2">What is your Name: </label>
-                            <input type="text" name='user_name' id="name" className="appearance-none w-full bg-transparent pr-4 py-1 focus:outline-none border-b-2 border-gray-300 " />
+                            <input type="text" name='user_name' id="name"
+                            value={userName}
+                            onChange={(e) => setUserName(e.target.value)}
+                            className="appearance-none w-full bg-transparent pr-4 py-1 focus:outline-none border-b-2 border-gray-300 " />
                         </div>
                         <div className="mt-6 px-3">
                             <label htmlFor="email" className="mb-2">Your E-mail Address: </label>
-                            <input type="email" name='user_email' id="email" className="bg-appearance-none w-full bg-transparent pr-4 py-1 focus:outline-none border-b-2 border-gray-300" />
+                            <input type="email" name='user_email' id="email"
+                            value={userMail}
+                            onChange={(e) => setUserMail(e.target.value)}
+                            className="bg-appearance-none w-full bg-transparent pr-4 py-1 focus:outline-none border-b-2 border-gray-300" />
                         </div>
                         <div className="mt-6 px-3">
                             <label htmlFor="message" className="mb-2">How can I help you?: </label>
-                            <textarea id="message" name='message' className="bg-appearance-none w-full bg-transparent pr-4 py-1 focus:outline-none border-b-2 border-gray-300 "></textarea>
+                            <textarea id="message" name='message'
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
+                            className="bg-appearance-none w-full bg-transparent pr-4 py-1 focus:outline-none border-b-2 border-gray-300 "></textarea>
                         </div>
-                        <button type='submit' value='send' className=" bg-black text-white mt-6 self-center lg:my-6 mx-3 w-40 h-12 py-3 px-10 font-medium ">Send</button>
+                        <button type='submit' value='send' disabled={!isFormValid()} className=" bg-black text-white mt-6 self-center lg:my-6 mx-3 w-40 h-12 py-3 px-10 font-medium ">Send</button>
                     </form>
                 </div>
             </div>
