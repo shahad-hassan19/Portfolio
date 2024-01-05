@@ -74,23 +74,23 @@ export default function ContactSection(){
                             <input type="text" name='user_name' id="name"
                             value={userName}
                             onChange={(e) => setUserName(e.target.value)}
-                            className="appearance-none w-full bg-transparent pr-4 py-1 focus:outline-none border-b-2 border-gray-300 " />
+                            className="appearance-none w-full text-gray-800 px-2 bg-transparent focus:shadow-md focus:shadow-black focus:rounded-sm pr-4 py-1 focus:outline-none border-b-2 border-gray-300 " />
                         </div>
                         <div className="mt-6 px-3">
                             <label htmlFor="email" className="mb-2">Your E-mail Address: </label>
                             <input type="email" name='user_email' id="email"
                             value={userMail}
                             onChange={(e) => setUserMail(e.target.value)}
-                            className="bg-appearance-none w-full bg-transparent pr-4 py-1 focus:outline-none border-b-2 border-gray-300" />
+                            className="bg-appearance-none w-full bg-transparent px-2 text-gray-800 focus:shadow-md focus:shadow-black focus:rounded-sm pr-4 py-1 focus:outline-none border-b-2 border-gray-300" />
                         </div>
                         <div className="mt-6 px-3">
                             <label htmlFor="message" className="mb-2">How can I help you?: </label>
                             <textarea id="message" name='message'
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
-                            className="bg-appearance-none w-full bg-transparent pr-4 py-1 focus:outline-none border-b-2 border-gray-300 "></textarea>
+                            className="bg-appearance-none w-full text-gray-800 px-2 bg-transparent focus:shadow-md focus:shadow-black focus:rounded-sm pr-4 py-1 focus:outline-none border-b-2 border-gray-300 "></textarea>
                         </div>
-                        <button type='submit' value='send' disabled={!isFormValid()} className=" bg-black text-white mt-6 self-center lg:my-6 mx-3 w-40 h-12 py-3 px-10 font-medium ">Send</button>
+                        <button type='submit' value='send' disabled={!isFormValid()} className=" bg-black text-white mt-6 self-center rounded-sm lg:my-6 w-40 h-12 py-3 px-10">Send</button>
                     </form>
                 </div>
             </div>
