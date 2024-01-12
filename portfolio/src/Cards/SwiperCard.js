@@ -2,6 +2,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Pic1 from '../Components/Assets/Mentor1.jpg';
 import Pic2 from '../Components/Assets/Mentor2.jpg';
+import Pic3 from '../Components/Assets/Mentor3.png'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -22,7 +23,7 @@ export default function SwiperCard() {
             className="mySwiper flex justify-center align-items-center">
                 <SwiperSlide className="flex text-center flex-col justify-items-center align-content-center ">
                     <p className="mb-4 w-2/3 self-center text-justify text-xl">
-                        "Working with Shahad was an absolute pleasure. His ability to quickly grasp new concepts and apply them creatively to projects is truly impressive. Not only does he possess strong technical skills, but his collaborative nature and effective communication make him a valuable asset to any team. I have no hesitation in recommending him as a skilled and adaptable frontend developer."
+                        "Guiding Shahad through the naunces of frontend development has been a rewarding experience. His ability to quickly grasp new concepts and apply them creatively to projects is truly impressive. Not only does he possess strong technical skills, but his collaborative nature and effective communication make him a valuable asset to any team. I have no hesitation in recommending him as a skilled and adaptable frontend developer."
                     </p>
                     <div className="self-center">
                         <img src = {Pic1} alt='Mentor-Pic' className="w-24 rounded-full" />
@@ -39,6 +40,16 @@ export default function SwiperCard() {
                     </div>
                     <h3 className="text-xl font-bold">Tanmay Sharma</h3>
                     <p>Saas Sales Professional</p>
+                </SwiperSlide>
+                <SwiperSlide className="flex text-center flex-col justify-items-center align-content-center ">
+                    <p className="mb-4 w-2/3 self-center text-justify text-xl">
+                        "Shahad has consistently demonstrated a high level of proficiency in frontend development. His code is not just functional but also elegant, reflecting a deep understanding of design principles. He possesses a strong command of frontend technologies, and his ability to adapt to evolving industry standards is impressive. His commitment to continuous improvement sets him apart as a valuable asset to any development team."
+                    </p>
+                    <div className="self-center">
+                        <img src = {Pic3} alt='Mentor-Pic' className="w-24 rounded-full" />
+                    </div>
+                    <h3 className="text-xl font-bold">Manish Gurjar</h3>
+                    <p>Senior UI/UX Designer | Product Design Expert</p>
                 </SwiperSlide>
             </Swiper>
         </>
