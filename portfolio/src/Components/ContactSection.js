@@ -91,7 +91,9 @@ export default function ContactSection(){
                             onChange={(e) => setMessage(e.target.value)}
                             className="bg-appearance-none w-full text-gray-800 px-2 bg-transparent focus:shadow-md focus:shadow-black focus:rounded-sm pr-4 py-1 focus:outline-none border-b-2 border-gray-300 "></textarea>
                         </div>
-                        <button type='submit' value='send' disabled={!isFormValid()} className=" bg-black text-white mt-6 self-center rounded-sm lg:my-6 w-40 h-12 py-3 px-10"><FaTelegramPlane/>Send</button>
+                        <button type='submit' value='send' disabled={!isFormValid()} className=" bg-black inline-flex justify-center text-white mt-6 self-center rounded-sm lg:my-6 w-40 h-12 py-3">
+                                <FaTelegramPlane className='mt-1 mr-1'/>Send
+                        </button>
                     </form>
                 </div>
             </div>
