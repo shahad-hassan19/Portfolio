@@ -55,7 +55,7 @@ export default function Navbar(){
                         <div className="flex justify-center self-center align-items-center mb-8 font-bold">
                             <a href="https://www.facebook.com/shahad.chauhangurjar.9" rel='noreferrer' target='_blank' ><FaFacebook className='text-2xl mx-4 text-white hover:text-blue-900' onClick={handleClickIcon}/></a>
                             <a href="https://www.Linkedin.com/in/shahad-hassan-82287a220" rel='noreferrer' target='_blank'><FaLinkedin className='text-2xl mx-4 text-white hover:text-blue-500' onClick={handleClickIcon}/></a>
-                            <a href="https://twitter.com/ChauhanShahad03" rel='noreferrer' target='_blank'><FaXTwitter className='text-2xl mx-4 text-white hover:text-black' onClick={handleClickIcon}/></a>
+                            <a href="https://twitter.com/HassanShahad019" rel='noreferrer' target='_blank'><FaXTwitter className='text-2xl mx-4 text-white hover:text-black' onClick={handleClickIcon}/></a>
                             <a href="https://github.com/shahad-hassan19" rel='noreferrer' target='_blank'><FaGithub className='text-2xl mx-4 text-white hover:text-black' onClick={handleClickIcon}/></a>
                             <a href="https://www.instagram.com/shahad_chauhan019/" rel='noreferrer' target='_blank'><FaInstagram className='text-2xl mx-4 text-white hover:text-pink-600' onClick={handleClickIcon}/></a>
                         </div>
