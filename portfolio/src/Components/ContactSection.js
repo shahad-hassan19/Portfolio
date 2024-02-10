@@ -61,7 +61,7 @@ export default function ContactSection(){
                         <div className="flex justify-center lg:justify-start align-items-center font-bold pt-12">
                             <a href="https://www.facebook.com/shahad.chauhangurjar.9" rel='noreferrer' target='_blank' ><FaFacebook className='text-2xl mx-3 text-gray-700 hover:text-blue-900'/></a>
                             <a href="https://www.linkedin.com/in/shahad-hassan-82287a220" rel='noreferrer' target='_blank'><FaLinkedin className='text-2xl mx-3 text-gray-700 hover:text-blue-500'/></a>
-                            <a href="https://twitter.com/HassanShahad019" rel='noreferrer' target='_blank'><FaXTwitter className='text-2xl mx-3 text-gray-700 hover:text-black'/></a>
+                            <a href="https://twitter.com/HassanShahad019m" rel='noreferrer' target='_blank'><FaXTwitter className='text-2xl mx-3 text-gray-700 hover:text-black'/></a>
                             <a href="https://github.com/shahad-hassan19" rel='noreferrer' target='_blank'><FaGithub className='text-2xl mx-3 text-gray-700 hover:text-black'/></a>
                             <a href="https://www.instagram.com/shahad_chauhan019/" rel='noreferrer' target='_blank'><FaInstagram className='text-2xl mx-3 text-gray-700 hover:text-pink-600'/></a>
                         </div>

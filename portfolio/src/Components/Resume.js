@@ -2,7 +2,7 @@ import EduCard from '../Cards/EduCard'
 import ExpCard from '../Cards/ExpCard';
 export default function Resume(){
     return(
-        <div id='resume' className=" bg-white w-full py-14 md:py-24">
+        <div id='resume' className=" bg-white text-left w-full py-14 md:py-24">
             <div className=" text-black sm:mx-12 md:mx-6 lg:mx-8 xl:mx-24 px-3">
                 <div>
                     <h2 className="text-center text-black mb-2"><span className="bg-yellow-300 px-2 ">Resume</span></h2>
@@ -23,16 +23,16 @@ export default function Resume(){
                     <div className="lg:flex-1 mt-12 px-6">
                         <h1 className=" text-1.5xl font-semibold pb-2 mb-6 ">My Experience</h1>
                         <div className=" border-l-2 border-yellow-300 pl-4">
-                            <ExpCard desgn="Front-end Developer Intern" duration="August 2023 - Present" company="SOFTLES" href1="http://www.softles.com/" mode="Hybrid" href2="" />
+                            <ExpCard desgn="Front End Developer Intern" duration="February 2024 - Present" company="SRG TECH SOLUTIONS" href="https://srgtechsolutions.in/" description="Contributing to the development of cutting-edge web applications using modern frontend technologies such as React.js, while staying updated with latest frontend trends and best practices to enhance project outcomes." />
                             <hr className="my-6" />
-                            <ExpCard desgn="Web Development and Designing Intern" duration="July 2023 - August 2023" company="Oasis Infobyte" mode="Remote" href1="https://oasisinfobyte.com/" href2="" />
+                            <ExpCard desgn="Front End Developer Intern" duration="August 2023 - February 2024" company="SOFTLES" href="http://www.softles.com/" description="Acquired proficiency in React.js through hands-on training, practical exercises and acquired valuable experience in version control systems like Git and establishing strong Front End foundations in responsive design and cross-browser compatibility." />
                             <hr className="my-6" />
                         </div>
                     </div>
                 </div>
                 <div className=" flex justify-center align-items-center mt-12 mb-4">
                     <button className="bg-white text-black cursor-pointer py-3 px-10 font-medium border-2 border-black hover:bg-black transition ease-in-out delay-150 duration-300 hover:text-white">
-                        <a href="https://docs.google.com/document/d/1qixj_qlZEedArTEIxSTLf6eqL2nd3t55/edit?usp=sharing&ouid=102141367933797596255&rtpof=true&sd=true" rel='noreferrer' target='_blank'>Download CV</a>
+                        <a href="https://drive.google.com/file/d/1rgpW_dbZKGsI7BIwJ0YiSF9LauagCuc8/view?usp=sharing" rel='noreferrer' target='_blank'>Download CV</a>
                     </button>
                 </div>
             </div>
