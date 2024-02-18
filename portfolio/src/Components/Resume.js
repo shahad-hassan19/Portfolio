@@ -32,7 +32,7 @@ export default function Resume(){
                 </div>
                 <div className=" flex justify-center align-items-center mt-12 mb-4">
                     <button className="bg-white text-black cursor-pointer py-3 px-10 font-medium border-2 border-black hover:bg-black transition ease-in-out delay-150 duration-300 hover:text-white">
-                        <a href="https://drive.google.com/file/d/1rgpW_dbZKGsI7BIwJ0YiSF9LauagCuc8/view?usp=sharing" rel='noreferrer' target='_blank'>Download CV</a>
+                        <a href="https://drive.google.com/file/d/1Jxecq1ufVbH7HWH9Zlk1mgA-sBqdmlF8/view?usp=sharing" rel='noreferrer' target='_blank'>Download CV</a>
                     </button>
                 </div>
             </div>
