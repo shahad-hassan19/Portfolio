@@ -2,6 +2,7 @@
 import ProjectCard from '../Cards/ProjectCard'
 import PortfolioImg from './Assets/Portfolio-img.png'
 import MG from './Assets/M&G.png'
+import CineQuestImg from './Assets/CineQuest.png'
 import Redfly from './Assets/Redfly.png'
 import MouseTracker from './Assets/MouseTracker.png'
 import PassGenerator from './Assets/PassGenerator.png'
@@ -25,14 +26,15 @@ export default function Projects(){
                             <button className={`text-black cursor-pointer pt-2 pb-1 px-5 font-semibold ${activeButton === 'ReactJS' ? 'border-b-2 border-yellow-300' : ''}`} onClick={()=>{
                                 setProj("ReactJS");
                                 setActiveButton("ReactJS")}} >React JS</button>
-                            <button className={`text-black cursor-pointer pt-2 pb-1 px-5 font-semibold ${activeButton === 'HTML' ? 'border-b-2 border-yellow-300' : ''}`} onClick={()=>{
-                                setProj("HTML")
-                                setActiveButton("HTML")}} >HTML & CSS</button>
+                            <button className={`text-black cursor-pointer pt-2 pb-1 px-5 font-semibold ${activeButton === 'Static' ? 'border-b-2 border-yellow-300' : ''}`} onClick={()=>{
+                                setProj("Static")
+                                setActiveButton("Static")}} >Static</button>
                         </div>
                         <div>
                             {
                                 proj == "All" && <div className='grid gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center ' >
                                     <ProjectCard src={PortfolioImg} href="https://portfolio-shahad-hassan.vercel.app/" name="Portfolio" />
+                                    <ProjectCard src={CineQuestImg} href="https://cinequest-gold.vercel.app/" name="CineQuest" />
                                     <ProjectCard src={MG} href="https://mangata-gallo-home.vercel.app/" name="Mangata & Gallo" />
                                     <ProjectCard src={Redfly} href="https://redfly-designs.vercel.app/" name="R£ƊFLƳ Designs" />
                                     <ProjectCard src={CoinQuotient} href="https://currency-converter-sable-ten.vercel.app/" name="CoinQuotient" />
@@ -43,13 +45,14 @@ export default function Projects(){
                             {
                                 proj == "ReactJS" && <div className='grid gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center' >
                                     <ProjectCard src={PortfolioImg} href="https://portfolio-shahad-hassan.vercel.app/" name="Portfolio" />
+                                    <ProjectCard src={CineQuestImg} href="https://cinequest-gold.vercel.app/" name="CineQuest" />
                                     <ProjectCard src={MouseTracker} href="https://mouse-position-tracker.vercel.app/" name="Mouse Position Tracker" />
                                     <ProjectCard src={PassGenerator} href="https://password-generator-gilt-six.vercel.app/" name="Password Generator" />
                                     <ProjectCard src={CoinQuotient} href="https://currency-converter-sable-ten.vercel.app/" name="CoinQuotient" />
                                 </div>
                             }
                             {
-                                proj == "HTML" && <div className='grid gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center' >
+                                proj == "Static" && <div className='grid gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center' >
                                 <ProjectCard src={MG} href="https://mangata-gallo-home.vercel.app/" name="Mangata & Gallo" />
                                 <ProjectCard src={Redfly} href="hhttps://redfly-designs.vercel.app/" name="R£ƊFLƳ Designs" />
                                 </div>
