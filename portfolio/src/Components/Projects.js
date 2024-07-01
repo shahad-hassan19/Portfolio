@@ -7,6 +7,7 @@ import Redfly from './Assets/Redfly.png'
 import MouseTracker from './Assets/MouseTracker.png'
 import PassGenerator from './Assets/PassGenerator.png'
 import CoinQuotient from './Assets/CoinQuotient.png'
+import InsightLens from './Assets/InsightLens.png'
 
 import { useState, React } from 'react';
 export default function Projects(){
@@ -23,9 +24,12 @@ export default function Projects(){
                             <button  className={`text-black cursor-pointer pt-2 pb-1 px-5 font-semibold ${activeButton === 'All' ? 'border-b-2 border-yellow-300' : ''}`} onClick={()=>{
                                 setProj("All");
                                 setActiveButton("All")}} >All</button>
+                            <button  className={`text-black cursor-pointer pt-2 pb-1 px-5 font-semibold ${activeButton === 'Full Stack' ? 'border-b-2 border-yellow-300' : ''}`} onClick={()=>{
+                                setProj("Full Stack");
+                                setActiveButton("Full Stack")}} >Full Stack</button>
                             <button className={`text-black cursor-pointer pt-2 pb-1 px-5 font-semibold ${activeButton === 'ReactJS' ? 'border-b-2 border-yellow-300' : ''}`} onClick={()=>{
-                                setProj("ReactJS");
-                                setActiveButton("ReactJS")}} >React JS</button>
+                                setProj("Frontend");
+                                setActiveButton("Frontend")}} >Frontend</button>
                             <button className={`text-black cursor-pointer pt-2 pb-1 px-5 font-semibold ${activeButton === 'Static' ? 'border-b-2 border-yellow-300' : ''}`} onClick={()=>{
                                 setProj("Static")
                                 setActiveButton("Static")}} >Static</button>
@@ -33,6 +37,7 @@ export default function Projects(){
                         <div>
                             {
                                 proj == "All" && <div className='grid gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center ' >
+                                    <ProjectCard src={InsightLens} href="https://insight-lens.vercel.app/" name="InsightLens" />
                                     <ProjectCard src={PortfolioImg} href="https://portfolio-shahad-hassan.vercel.app/" name="Portfolio" />
                                     <ProjectCard src={CineQuestImg} href="https://cinequest-gold.vercel.app/" name="CineQuest" />
                                     <ProjectCard src={MG} href="https://mangata-gallo-home.vercel.app/" name="Mangata & Gallo" />
@@ -43,7 +48,12 @@ export default function Projects(){
                                 </div>
                             }
                             {
-                                proj == "ReactJS" && <div className='grid gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center' >
+                                proj == "Full Stack" && <div className='grid gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center' >
+                                    <ProjectCard src={InsightLens} href="https://insight-lens.vercel.app/" name="InsightLens" />
+                                </div>
+                            }
+                            {
+                                proj == "Frontend" && <div className='grid gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center' >
                                     <ProjectCard src={PortfolioImg} href="https://portfolio-shahad-hassan.vercel.app/" name="Portfolio" />
                                     <ProjectCard src={CineQuestImg} href="https://cinequest-gold.vercel.app/" name="CineQuest" />
                                     <ProjectCard src={MouseTracker} href="https://mouse-position-tracker.vercel.app/" name="Mouse Position Tracker" />
