@@ -27,7 +27,7 @@ export default function Projects(){
                             <button  className={`text-black cursor-pointer pt-2 pb-1 px-5 font-semibold ${activeButton === 'Full Stack' ? 'border-b-2 border-yellow-300' : ''}`} onClick={()=>{
                                 setProj("Full Stack");
                                 setActiveButton("Full Stack")}} >Full Stack</button>
-                            <button className={`text-black cursor-pointer pt-2 pb-1 px-5 font-semibold ${activeButton === 'ReactJS' ? 'border-b-2 border-yellow-300' : ''}`} onClick={()=>{
+                            <button className={`text-black cursor-pointer pt-2 pb-1 px-5 font-semibold ${activeButton === 'Frontend' ? 'border-b-2 border-yellow-300' : ''}`} onClick={()=>{
                                 setProj("Frontend");
                                 setActiveButton("Frontend")}} >Frontend</button>
                             <button className={`text-black cursor-pointer pt-2 pb-1 px-5 font-semibold ${activeButton === 'Static' ? 'border-b-2 border-yellow-300' : ''}`} onClick={()=>{
