@@ -13,7 +13,7 @@ export default function AboutMe(){
                             Hi, I'm <span className="font-bold border-b-2 border-yellow-300">Shahad Hassan</span>
                         </h2>
                         <p className="mb-4 text-xl text-justify font-normal">
-                        I'm a frontend developer, who is passionate about React. I love building websites that captivate users. I'm always exploring new ways to bring ideas to life through code. Being a firm believer in the power of teamwork, I cherish the opportunity to collaborate and contribute as a team player, where our collective creativity sparks exceptional results. I embrace challenges as opportunities for growth, dedicating myself to hard work and continuous learning in this ever-evolving tech landscape.
+                        I'm a Full Stack developer, who is passionate about MERN Stack. I love building websites that captivate users. I'm always exploring new ways to bring ideas to life through code. Being a firm believer in the power of teamwork, I cherish the opportunity to collaborate and contribute as a team player, where our collective creativity sparks exceptional results. I embrace challenges as opportunities for growth, dedicating myself to hard work and continuous learning in this ever-evolving tech landscape.
                         </p>
                     </div>
                     <img src={LaptopPic} alt="Laptop" className="w-80 rounded-md self-center lg:ml-6 mt-6 lg:mt-0 lg:px-0" />

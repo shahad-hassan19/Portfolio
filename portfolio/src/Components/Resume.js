@@ -12,7 +12,7 @@ export default function Resume(){
                     <div className=" grid grid-cols-1 lg:flex-1 mt-12 px-6">
                         <h1 className=" text-1.5xl font-semibold pb-2 mb-6">My Education</h1>
                         <div className=" border-l-2 border-yellow-300 pl-4">
-                            <EduCard name="Bachelor of Technology - CSE" year="2020-present" board="AKTU" institute="Vidya College of Engineering" />
+                            <EduCard name="Bachelor of Technology - CSE" year="2020-2024" board="AKTU" institute="Vidya College of Engineering" />
                             <hr className="my-6" />
                             <EduCard name="Intermediate" year="2019-2020" board="CBSE Board" institute="D.S. Public School" />
                             <hr className="my-6" />
