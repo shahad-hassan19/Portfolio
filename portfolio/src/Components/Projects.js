@@ -36,7 +36,7 @@ export default function Projects(){
                         </div>
                         <div>
                             {
-                                proj == "All" && <div className='grid gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center ' >
+                                proj == "All" && <div className='grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center ' >
                                     <ProjectCard src={InsightLens} href="https://insight-lens.vercel.app/" name="InsightLens" />
                                     <ProjectCard src={PortfolioImg} href="https://portfolio-shahad-hassan.vercel.app/" name="Portfolio" />
                                     <ProjectCard src={CineQuestImg} href="https://cinequest-gold.vercel.app/" name="CineQuest" />
@@ -48,12 +48,12 @@ export default function Projects(){
                                 </div>
                             }
                             {
-                                proj == "Full Stack" && <div className='grid gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center' >
+                                proj == "Full Stack" && <div className='grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center' >
                                     <ProjectCard src={InsightLens} href="https://insight-lens.vercel.app/" name="InsightLens" />
                                 </div>
                             }
                             {
-                                proj == "Frontend" && <div className='grid gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center' >
+                                proj == "Frontend" && <div className='grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center' >
                                     <ProjectCard src={PortfolioImg} href="https://portfolio-shahad-hassan.vercel.app/" name="Portfolio" />
                                     <ProjectCard src={CineQuestImg} href="https://cinequest-gold.vercel.app/" name="CineQuest" />
                                     <ProjectCard src={MouseTracker} href="https://mouse-position-tracker.vercel.app/" name="Mouse Position Tracker" />
@@ -62,7 +62,7 @@ export default function Projects(){
                                 </div>
                             }
                             {
-                                proj == "Static" && <div className='grid gap-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center' >
+                                proj == "Static" && <div className='grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center' >
                                 <ProjectCard src={MG} href="https://mangata-gallo-home.vercel.app/" name="Mangata & Gallo" />
                                 <ProjectCard src={Redfly} href="hhttps://redfly-designs.vercel.app/" name="R£ƊFLƳ Designs" />
                                 </div>

@@ -1,15 +1,6 @@
 import SkillCard from "../Cards/SkillCard"
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3 } from "react-icons/fa";
-import { FaJs } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { FaNode } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
-import { SiMongodb } from "react-icons/si";
-import { FaFigma } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
-import { FaBootstrap } from "react-icons/fa";
-import { FaSass } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNode ,FaFigma, FaBootstrap, FaSass } from "react-icons/fa";
+import { SiExpress, SiMongoose, SiTailwindcss, SiFirebase, SiPostman,  SiMongodb } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
 export default function MySkills(){
@@ -25,11 +16,14 @@ export default function MySkills(){
                     <SkillCard icon={<FaNode/>} skill="Node JS" />
                     <SkillCard icon={<SiExpress/>} skill="Express JS" />
                     <SkillCard icon={<SiMongodb/>} skill="Mongo DB" />
+                    <SkillCard icon={<SiFirebase/>} skill="Firebase" />
                     <SkillCard icon={<TbBrandNextjs/>} skill="Next JS" />
+                    <SkillCard icon={<SiPostman/>} skill="Postman" />
                     <SkillCard icon={<FaFigma/>} skill="Figma" />
                     <SkillCard icon={<FaHtml5/>} skill="HTML" />
                     <SkillCard icon={<FaCss3/>} skill="CSS" />
                     <SkillCard icon={<FaJs/>} skill="JavaScript" />
+                    <SkillCard icon={<SiMongoose/>} skill="Mongoose" />
                     <SkillCard icon={<SiTailwindcss/>} skill="Tailwind CSS" />
                     <SkillCard icon={<FaBootstrap/>} skill="Bootstrap" />
                     <SkillCard icon={<FaSass/>} skill="Sass" />
