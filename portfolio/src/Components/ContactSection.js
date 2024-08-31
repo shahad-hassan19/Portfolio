@@ -20,7 +20,8 @@ export default function ContactSection(){
         e.preventDefault();
         setLoading(true)
         emailjs.sendForm('service_x02jmrm', 'template_czqjhqp', form.current, 'mv_jU07IPDEPAdBHe')
-            .then((e) => {
+            .then((result) => {
+                console.log(result.text)
                 e.target.reset();
                 toast.success('Message sent successfully!')
                 setLoading(false)
