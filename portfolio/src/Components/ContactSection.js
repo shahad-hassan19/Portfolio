@@ -21,10 +21,9 @@ export default function ContactSection(){
         setLoading(true)
         emailjs.sendForm('service_x02jmrm', 'template_czqjhqp', form.current, 'mv_jU07IPDEPAdBHe')
             .then((result) => {
-                console.log(result.text);
+                e.target.reset();
                 toast.success('Message sent successfully!')
                 setLoading(false)
-                e.target.reset();
             }, (error) => {
                 console.log(error.text);
             }
@@ -99,7 +98,7 @@ export default function ContactSection(){
                         </div>
                         <button type='submit' value='send' disabled={!isFormValid() || loading} className=" bg-black inline-flex justify-center text-white mt-6 self-center rounded-sm lg:my-6 w-40 h-12 py-3">
                                 {
-                                    loading ? "Sending..." : (<span><FaTelegramPlane className='mt-1 mr-1'/>Send</span>)
+                                    loading ? "Sending ..." : (<span className='inline-flex items-center justify-center'><FaTelegramPlane className='mt-1 mr-1'/>Send</span>)
                                 }
                         </button>
                     </form>
