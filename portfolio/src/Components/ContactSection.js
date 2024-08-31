@@ -20,10 +20,13 @@ export default function ContactSection(){
         e.preventDefault();
         setLoading(true)
         emailjs.sendForm('service_x02jmrm', 'template_czqjhqp', form.current, 'mv_jU07IPDEPAdBHe')
-            .then((result) => {
+            .then((e) => {
                 e.target.reset();
                 toast.success('Message sent successfully!')
                 setLoading(false)
+                setUserName('');
+                setUserMail('');
+                setMessage('');
             }, (error) => {
                 console.log(error.text);
             }
