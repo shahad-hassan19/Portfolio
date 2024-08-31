@@ -6,20 +6,25 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { FaTelegramPlane } from "react-icons/fa";
+import toast, { Toaster } from 'react-hot-toast';
+
 export default function ContactSection(){
 
     const [ userName, setUserName ] = useState('')
     const [ userMail, setUserMail ] = useState('')
+    const [ loading, setLoading ] = useState(false)
     const [ message, setMessage ] = useState('')
 
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
+        setLoading(true)
         emailjs.sendForm('service_x02jmrm', 'template_czqjhqp', form.current, 'mv_jU07IPDEPAdBHe')
             .then((result) => {
                 console.log(result.text);
+                toast.success('Message sent successfully!')
+                setLoading(false)
                 e.target.reset();
-                alert('E-mail sent!');
             }, (error) => {
                 console.log(error.text);
             }
@@ -39,6 +44,7 @@ export default function ContactSection(){
                 <div className=" text-center lg:text-left px-3">
                     <h1 className=" font-bold text-3.5xl mb-12 ">Let's get in touch</h1>
                     <div>
+                        <Toaster toastOptions={{duration: 4000}} />
                         <p className=" text-justify text-xl mb-12">
                         "I'm thrilled to be on this journey of innovation and discovery, and I'm excited to connect, collaborate, and create something amazing together. Let's build the future, one line of code at a time!"
                         </p>
@@ -91,8 +97,10 @@ export default function ContactSection(){
                             onChange={(e) => setMessage(e.target.value)}
                             className="bg-appearance-none w-full text-gray-800 px-2 bg-transparent focus:shadow-md focus:shadow-black focus:rounded-sm pr-4 py-1 focus:outline-none border-b-2 border-gray-300 "></textarea>
                         </div>
-                        <button type='submit' value='send' disabled={!isFormValid()} className=" bg-black inline-flex justify-center text-white mt-6 self-center rounded-sm lg:my-6 w-40 h-12 py-3">
-                                <FaTelegramPlane className='mt-1 mr-1'/>Send
+                        <button type='submit' value='send' disabled={!isFormValid() || loading} className=" bg-black inline-flex justify-center text-white mt-6 self-center rounded-sm lg:my-6 w-40 h-12 py-3">
+                                {
+                                    loading ? "Sending..." : (<span><FaTelegramPlane className='mt-1 mr-1'/>Send</span>)
+                                }
                         </button>
                     </form>
                 </div>
