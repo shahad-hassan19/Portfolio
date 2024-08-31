@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Mr Bedfort
+- Font Author: Copyright (c) 2006 Alejandro Paul (sudtipos@sudtipos.com), with Reserved Font Name "Mr Bedfort"
+- Font Source: https://fonts.gstatic.com/s/mrbedfort/v22/MQpR-WCtNZSWAdTMwBicliq0XZe_Iy8.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
