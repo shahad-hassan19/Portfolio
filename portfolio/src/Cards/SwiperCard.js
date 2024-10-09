@@ -1,8 +1,8 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Pic1 from '../components/Assets/Mentor1.jpg';
-import Pic2 from '../components/Assets/Mentor2.jpg';
-import Pic3 from '../components/Assets/Mentor3.png'
+import Pic1 from '../Components/Assets/Mentor1.jpg';
+import Pic2 from '../Components/Assets/Mentor2.jpg';
+import Pic3 from '../Components/Assets/Mentor3.png'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';

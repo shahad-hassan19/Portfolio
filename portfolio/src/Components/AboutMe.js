@@ -17,7 +17,7 @@ export default function AboutMe(){
                         </p>
                     </div>
                     <div className="w-80 rounded-md self-center lg:ml-6 mt-6 lg:mt-0 lg:px-0">
-                    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="shahad-hassan-82287a220" data-version="v1"></div>
+                    <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="shahad-hassan-82287a220" data-version="v1"></div>
                     </div>
                 </div>
                 <div className="mt-6 grid sm:grid-cols-1 sm:justify-items-center md md:grid-cols-2 lg:flex lg:justify-between align-items-center ">
