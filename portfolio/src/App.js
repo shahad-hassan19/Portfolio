@@ -1,14 +1,14 @@
 import './App.css';
-import Navbar from './Components/Navbar/Navbar';
-import Hero from './Components/Hero';
-import AboutMe from './Components/AboutMe';
-import MySkills from './Components/MySkills';
-import Resume from './Components/Resume';
-import Projects from './Components/Projects';
-import HireMe from './Components/HireMe';
-import Testimonials from './Components/Testimonials';
-import ContactSection from './Components/ContactSection';
-import Footer from './Components/Footer';
+import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero';
+import AboutMe from './components/AboutMe';
+import MySkills from './components/MySkills';
+import Resume from './components/Resume';
+import Projects from './components/Projects';
+import HireMe from './components/HireMe';
+import Testimonials from './components/Testimonials';
+import ContactSection from './components/ContactSection';
+import Footer from './components/Footer';
 
 function App() {
   return (
