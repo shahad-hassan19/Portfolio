@@ -13,7 +13,11 @@ export default function AboutMe(){
                             Hi, I'm <span className="font-bold border-b-2 border-yellow-300">Shahad Hassan</span>
                         </h2>
                         <p className="mb-4 text-xl text-justify font-normal">
-                        I'm a Full Stack developer, who is passionate about MERN Stack. I love building websites that captivate users. I'm always exploring new ways to bring ideas to life through code. Being a firm believer in the power of teamwork, I cherish the opportunity to collaborate and contribute as a team player, where our collective creativity sparks exceptional results. I embrace challenges as opportunities for growth, dedicating myself to hard work and continuous learning in this ever-evolving tech landscape.
+                            I am a Full Stack Developer with a strong foundation in modern web technologies and a proven ability to take projects from concept to production. With experience spanning both frontend and backend systems, I have independently developed and deployed real-world applications, balancing performance, security, and usability.
+
+                            At Softles, I transitioned from an intern to a full-time role, contributing to key product initiatives and collaborating closely with other developers to deliver scalable solutions.
+
+                            I bring a builder’s mindset, a deep understanding of web architecture, and a commitment to continuous improvement. I'm particularly motivated by opportunities where engineering excellence meets real-world user impact.
                         </p>
                     </div>
                     <div className="w-80 rounded-md self-center lg:ml-6 mt-6 lg:mt-0 lg:px-0">

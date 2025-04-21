@@ -1,7 +1,7 @@
 import SkillCard from "../Cards/SkillCard"
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNode ,FaFigma, FaBootstrap, FaSass } from "react-icons/fa";
-import { SiExpress, SiMongoose, SiTailwindcss, SiFirebase, SiPostman,  SiMongodb } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
+import { SiExpress, SiTypescript, SiMongoose, SiTailwindcss, SiFirebase, SiPostman,  SiMongodb, SiShopify } from "react-icons/si";
+import { TbBrandNextjs, TbBrandPrisma } from "react-icons/tb";
 
 export default function MySkills(){
     return(
@@ -12,12 +12,14 @@ export default function MySkills(){
                     <h2 className="text-center font-semibold text-3.5xl mb-12 ">How can I help your project!</h2>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
-                    <SkillCard icon={<FaReact/>} skill="React JS" />
-                    <SkillCard icon={<FaNode/>} skill="Node JS" />
-                    <SkillCard icon={<SiExpress/>} skill="Express JS" />
-                    <SkillCard icon={<SiMongodb/>} skill="Mongo DB" />
+                    <SkillCard icon={<FaReact/>} skill="ReactJS" />
+                    <SkillCard icon={<FaNode/>} skill="NodeJS" />
+                    <SkillCard icon={<SiExpress/>} skill="ExpressJS" />
+                    <SkillCard icon={<SiMongodb/>} skill="MongoDB" />
                     <SkillCard icon={<SiFirebase/>} skill="Firebase" />
-                    <SkillCard icon={<TbBrandNextjs/>} skill="Next JS" />
+                    <SkillCard icon={<SiTypescript/>} skill="TypeScript" />
+                    <SkillCard icon={<TbBrandNextjs/>} skill="NextJS" />
+                    <SkillCard icon={<TbBrandPrisma/>} skill="Prisma"/>
                     <SkillCard icon={<SiPostman/>} skill="Postman" />
                     <SkillCard icon={<FaFigma/>} skill="Figma" />
                     <SkillCard icon={<FaHtml5/>} skill="HTML" />
@@ -27,6 +29,7 @@ export default function MySkills(){
                     <SkillCard icon={<SiTailwindcss/>} skill="Tailwind CSS" />
                     <SkillCard icon={<FaBootstrap/>} skill="Bootstrap" />
                     <SkillCard icon={<FaSass/>} skill="Sass" />
+                    <SkillCard icon={<SiShopify/>} skill="Shopify Liquid" />
                 </div>
             </div>
         </div>

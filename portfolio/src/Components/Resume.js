@@ -9,7 +9,7 @@ export default function Resume(){
                     <h2 className="text-center font-semibold text-3.5xl mb-12 ">A summary Of My Resume</h2>
                 </div>
                 <div className='lg:flex'>
-                    <div className=" grid grid-cols-1 lg:flex-1 mt-12 px-6">
+                    <div className="grid grid-cols-1 lg:flex-1 mt-12 px-6">
                         <h1 className=" text-1.5xl font-semibold pb-2 mb-6">My Education</h1>
                         <div className=" border-l-2 border-yellow-300 pl-4">
                             <EduCard name="Bachelor of Technology - CSE" year="2020-2024" board="AKTU" institute="Vidya College of Engineering" />
@@ -20,12 +20,12 @@ export default function Resume(){
                             <hr className="my-6" />
                         </div>
                     </div>
-                    <div className="lg:flex-1 mt-12 px-6">
+                    <div className="grid grid-cols-1 lg:flex-1 mt-12 px-6">
                         <h1 className=" text-1.5xl font-semibold pb-2 mb-6 ">My Experience</h1>
                         <div className=" border-l-2 border-yellow-300 pl-4">
-                            <ExpCard desgn="Front End Developer" duration="February 2024 - Present" company="SOFTLES" href="http://www.softles.com/" description="Contributing to the development of cutting-edge web applications using modern frontend technologies such as React.js, while staying updated with latest frontend trends and best practices to enhance project outcomes." />
+                            <ExpCard desgn="Full Stack Developer" duration="February 2025 - Present" company="SOFTLES" href="http://www.softles.com/" description="Built and deployed a modern web platform with user authentication, file and video handling, payment processing, and admin-level controls. Owned integration of third-party services and APIs, navigating documentation gaps and solving real-world implementation challenges." />
                             <hr className="my-6" />
-                            <ExpCard desgn="Front End Developer Intern" duration="August 2023 - February 2024" company="SOFTLES" href="http://www.softles.com/" description="Acquired proficiency in React.js through hands-on training, practical exercises and acquired valuable experience in version control systems like Git and establishing strong Front End foundations in responsive design and cross-browser compatibility." />
+                            <ExpCard desgn="Front End Developer (Intern → Full Time)" duration="August 2023 - February 2025" company="SOFTLES" href="http://www.softles.com/" description="Contributed to the development and evolution of user-facing web platforms, starting as an intern and transitioning into a full-time role based on performance and ownership." />
                             <hr className="my-6" />
                         </div>
                     </div>

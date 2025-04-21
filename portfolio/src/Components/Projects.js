@@ -1,12 +1,11 @@
 /* eslint-disable eqeqeq */
 import ProjectCard from '../Cards/ProjectCard'
 import PortfolioImg from './Assets/Portfolio-img.png'
-import CineQuestImg from './Assets/CineQuest.png'
 import NextMusic from './Assets/NextMusic.png'
-import MouseTracker from './Assets/MouseTracker.png'
 import PassGenerator from './Assets/PassGenerator.png'
 import CoinQuotient from './Assets/CoinQuotient.png'
 import InsightLens from './Assets/InsightLens.png'
+import ArtTechImg from './Assets/ArtTechImg.png'
 
 import { useState, React } from 'react';
 export default function Projects(){
@@ -23,9 +22,9 @@ export default function Projects(){
                             <button  className={`text-black cursor-pointer pt-2 pb-1 px-5 font-semibold ${activeButton === 'All' ? 'border-b-2 border-yellow-300' : ''}`} onClick={()=>{
                                 setProj("All");
                                 setActiveButton("All")}} >All</button>
-                            <button  className={`text-black cursor-pointer pt-2 pb-1 px-5 font-semibold ${activeButton === 'NextJs' ? 'border-b-2 border-yellow-300' : ''}`} onClick={()=>{
+                            <button  className={`text-black cursor-pointer pt-2 pb-1 px-5 font-semibold ${activeButton === 'NextJS' ? 'border-b-2 border-yellow-300' : ''}`} onClick={()=>{
                                 setProj("NextJS");
-                                setActiveButton("Full Stack")}} >NextJS</button>
+                                setActiveButton("NextJS")}} >NextJS</button>
                             <button  className={`text-black cursor-pointer pt-2 pb-1 px-5 font-semibold ${activeButton === 'Full Stack' ? 'border-b-2 border-yellow-300' : ''}`} onClick={()=>{
                                 setProj("Full Stack");
                                 setActiveButton("Full Stack")}} >Full Stack</button>
@@ -35,19 +34,19 @@ export default function Projects(){
                         </div>
                         <div>
                             {
-                                proj == "All" && <div className='grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center ' >
+                                proj == "All" && <div className='grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center '>
+                                    <ProjectCard src={ArtTechImg} href="https://online.arttechbsp.com/" name="ArtTech Institute LMS" />
                                     <ProjectCard src={NextMusic} href="https://music-nextjs-sh.vercel.app/" name="NextJS-Music" />
                                     <ProjectCard src={InsightLens} href="https://insight-lens.vercel.app/" name="InsightLens" />
                                     <ProjectCard src={PortfolioImg} href="https://portfolio-shahad-hassan.vercel.app/" name="Portfolio" />
-                                    <ProjectCard src={CineQuestImg} href="https://cinequest-gold.vercel.app/" name="CineQuest" />
                                     <ProjectCard src={CoinQuotient} href="https://currency-converter-sable-ten.vercel.app/" name="CoinQuotient" />
-                                    <ProjectCard src={MouseTracker} href="https://mouse-position-tracker.vercel.app/" name="Mouse Position Tracker" />
                                     <ProjectCard src={PassGenerator} href="https://password-generator-gilt-six.vercel.app/" name="Password Generator" />
                                 </div>
                             }
                             {
                                 proj == "NextJS" && <div className='grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center' >
-                                <ProjectCard src={NextMusic} href="https://music-nextjs-sh.vercel.app/" name="NextJS-Music" />
+                                    <ProjectCard src={ArtTechImg} href="https://online.arttechbsp.com/" name="ArtTech Institute LMS" />
+                                    <ProjectCard src={NextMusic} href="https://music-nextjs-sh.vercel.app/" name="NextJS-Music" />
                                 </div>
                             }
                             {
@@ -58,8 +57,6 @@ export default function Projects(){
                             {
                                 proj == "Frontend" && <div className='grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center' >
                                     <ProjectCard src={PortfolioImg} href="https://portfolio-shahad-hassan.vercel.app/" name="Portfolio" />
-                                    <ProjectCard src={CineQuestImg} href="https://cinequest-gold.vercel.app/" name="CineQuest" />
-                                    <ProjectCard src={MouseTracker} href="https://mouse-position-tracker.vercel.app/" name="Mouse Position Tracker" />
                                     <ProjectCard src={PassGenerator} href="https://password-generator-gilt-six.vercel.app/" name="Password Generator" />
                                     <ProjectCard src={CoinQuotient} href="https://currency-converter-sable-ten.vercel.app/" name="CoinQuotient" />
                                 </div>
