@@ -6,6 +6,7 @@ import PassGenerator from './Assets/PassGenerator.png'
 import CoinQuotient from './Assets/CoinQuotient.png'
 import InsightLens from './Assets/InsightLens.png'
 import ArtTechImg from './Assets/ArtTechImg.png'
+import RecoBeeImg from './Assets/Recobee.png'
 
 import { useState, React } from 'react';
 export default function Projects(){
@@ -36,6 +37,7 @@ export default function Projects(){
                             {
                                 proj == "All" && <div className='grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center '>
                                     <ProjectCard src={ArtTechImg} href="https://online.arttechbsp.com/" name="ArtTech Institute LMS" />
+                                    <ProjectCard src={RecoBeeImg} href="https://dev.recobee.ai/" name="RecoBee Analytics" />
                                     <ProjectCard src={NextMusic} href="https://music-nextjs-sh.vercel.app/" name="NextJS-Music" />
                                     <ProjectCard src={InsightLens} href="https://insight-lens.vercel.app/" name="InsightLens" />
                                     <ProjectCard src={PortfolioImg} href="https://portfolio-shahad-hassan.vercel.app/" name="Portfolio" />
@@ -55,7 +57,8 @@ export default function Projects(){
                                 </div>
                             }
                             {
-                                proj == "Frontend" && <div className='grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center' >
+                                proj == "Frontend" && <div className='grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center align-items-center'>
+                                    <ProjectCard src={RecoBeeImg} href="https://dev.recobee.ai/" name="RecoBee Analytics" />
                                     <ProjectCard src={PortfolioImg} href="https://portfolio-shahad-hassan.vercel.app/" name="Portfolio" />
                                     <ProjectCard src={PassGenerator} href="https://password-generator-gilt-six.vercel.app/" name="Password Generator" />
                                     <ProjectCard src={CoinQuotient} href="https://currency-converter-sable-ten.vercel.app/" name="CoinQuotient" />
